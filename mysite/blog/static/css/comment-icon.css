@@ -1,0 +1,52 @@
+
+.social-icons a:hover::before,
+.wrapper .icon:hover::before,
+.buttons button:hover:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  background: #ecf0f3;
+  box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
+}
+
+.social-share .row {
+  color: #31344b;
+  font-size: 17px;
+  cursor: pointer;
+  position: relative;
+  
+}
+.social-share .row::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 2px;
+  background: #e0e6eb;
+  margin-left: -25px;
+}
+.row:first-child::before {
+  background: none;
+}
+.social-share .row i.icon-2 {
+  position: absolute;
+  color: #31344b;
+  transform: translateY(-50%);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.row:nth-child(2):hover i.fa-comment {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.social-share span {
+  font-family: roboto condensed !important;
+  font-weight: 300 !important;
+  
+}

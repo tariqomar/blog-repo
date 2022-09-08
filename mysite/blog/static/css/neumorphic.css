@@ -1,0 +1,159 @@
+body {
+    background: #eef;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  button.neumorphic {
+    transition: all 100ms ease-out;
+    transition-property: box-shadow, background;
+    background: linear-gradient(135deg, #e9e9ff, #f3f3ff);
+    box-shadow: 4px 4px 8px #b1b1ff, -4px -4px 8px white;
+    position: relative;
+    background-clip: padding-box;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 4px;
+    font-size: 16pt;
+    padding: 0.5em 0.75em;
+    margin: 1em;
+    cursor: pointer;
+  }
+  button.neumorphic:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -2px;
+    border-radius: inherit;
+    background: linear-gradient(135deg, white, #cfcfff);
+  }
+  button.neumorphic:hover {
+    transition: all 100ms ease-out;
+    transition-property: box-shadow, background;
+    background: linear-gradient(135deg, #e4e4ff, ghostwhite);
+    box-shadow: 8px 8px 16px #b1b1ff, -8px -8px 16px white;
+    position: relative;
+    background-clip: padding-box;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+  }
+  button.neumorphic:hover:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -2px;
+    border-radius: inherit;
+    background: linear-gradient(135deg, white, #cfcfff);
+  }
+  button.neumorphic:active, button.neumorphic:hover:active {
+    transition: all 100ms ease-out;
+    transition-property: box-shadow, background;
+    background: linear-gradient(135deg, #e9e9ff, #f3f3ff);
+    box-shadow: 2px 2px 4px #b1b1ff, -2px -2px 4px white;
+    position: relative;
+    background-clip: padding-box;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+  }
+  button.neumorphic:active:before, button.neumorphic:hover:active:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -2px;
+    border-radius: inherit;
+    background: linear-gradient(135deg, white, #cfcfff);
+  }
+  button.neumorphic:focus {
+    outline: none;
+    transition: all 100ms ease-out;
+    transition-property: box-shadow, background;
+    background: linear-gradient(135deg, #e9e9ff, #f3f3ff);
+    box-shadow: 8px 8px 16px #b1b1ff, -8px -8px 16px white;
+    position: relative;
+    background-clip: padding-box;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+  }
+  button.neumorphic:focus:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -2px;
+    border-radius: inherit;
+    background: linear-gradient(135deg, white, #cfcfff);
+  }
+  
+  input.neumorphic {
+    transition: all 100ms ease-out;
+    transition-property: box-shadow, background;
+    background: linear-gradient(135deg, #e9e9ff, #f3f3ff);
+    box-shadow: inset 2px 2px 4px #b1b1ff, inset -2px -2px 4px white;
+    position: relative;
+    background-clip: padding-box;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+    display: inline;
+    border-radius: 4px;
+    font-size: 12pt;
+    padding: 0.5em 1em;
+    height: 2em;
+  }
+  input.neumorphic:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -2px;
+    border-radius: inherit;
+    background: linear-gradient(135deg, white, #cfcfff);
+  }
+  input.neumorphic:focus {
+    outline: none;
+    transition: all 100ms ease-out;
+    transition-property: box-shadow, background;
+    background: linear-gradient(135deg, #e9e9ff, #f3f3ff);
+    box-shadow: inset 3px 3px 6px #9c9cff, inset -3px -3px 6px white;
+    position: relative;
+    background-clip: padding-box;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+  }
+  input.neumorphic:focus:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -2px;
+    border-radius: inherit;
+    background: linear-gradient(135deg, white, #c5c5ff);
+  }

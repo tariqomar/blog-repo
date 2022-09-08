@@ -1,0 +1,46 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+
+<section>
+    
+{% for post in post_list %}
+  <div class="post">
+  <div class="box card">
+  <h1> <a href="{% url 'post_detail' pk=post.pk %}">{{post.title}}</a></h1>
+  <br>
+  <div class="social-share">
+  <div class="row box card">
+    <i class="far fa-comment"></i>
+    <i class="icon-2 fas fa-comment"></i>
+    <a href="{% url 'post_detail' pk=post.pk%}">{{post.approve_comments.count}}</a>
+    <br>
+    <br>
+    {% for comment in post.comments.all %}
+   
+
+    {% if user.is_authenticated or comment.approved_comment %}
+    
+    <p><strong>{{ comment.author }}</strong> {{ comment.text|safe|linebreaks }}</p>
+    {% endif %}
+    
+  {% empty %}
+    <p>No comments posted.</p>
+  {% endfor %}
+    
+
+  </div>
+  </div>
+      
+    
+    
+  </div>  
+  
+  <br>
+
+{% endfor %}      
+</section>
+   
+<br>
+
+{% endblock %}
+

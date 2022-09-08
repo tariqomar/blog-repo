@@ -1,0 +1,58 @@
+
+  
+  .box {
+    background: transparent;
+    margin: 0 auto;
+    border-radius: 50px;
+      box-shadow: 10px 10px 20px rgba(0,0,0,0.2), -10px -10px 20px rgba(255,255,255,0.4);
+  }
+  
+  .menu {
+    font-size: 2rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    
+  }
+  
+  section {
+    display: flex;
+    padding-bottom: 3rem;
+  }
+  
+  .card {
+    padding: 2rem;
+  }
+  
+  .card:not(:last-child) {
+      margin-right: 3rem;
+  }
+  
+  header {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+  
+  h1 {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+  
+  footer {
+    padding: 2rem;
+    display: block;
+    position: relative;
+  }
+  
+  button {
+    display: block;
+    padding: 1rem 2rem;
+    margin-top: 2rem !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    outline: 0;
+    border: 0;
+  }
